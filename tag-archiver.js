@@ -18,8 +18,9 @@
 // A special "input" task can be created to control this script. Name the task
 // "milkscript:tag-archiver" and include a single note. The note should contain
 // a list of regex or strings (one per line) indicating tags to ignore in the
-// archiving process. For example, the following note content would ignore tags
-// starting with a period, as well as the tag "waiting":
+// archiving process. The input tasks's completion status is not considered. For
+// example, the following note content would ignore tags starting with a period,
+// as well as the tag "waiting":
 //
 //    /\..+/
 //    waiting
