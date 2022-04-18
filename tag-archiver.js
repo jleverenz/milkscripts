@@ -68,5 +68,8 @@ if (tasks.length === 1) {
         tag.delete();
         reportNotes.push(`${tagName} - ${tasks.length} completed tasks updated`)
     });
-    rtm.addTask('milkscript:tag-archiver - archive report').addNote(reportNotes.join('\n')).complete();
+
+    if (reportNotes.length !== 0) {
+        rtm.addTask('milkscript:tag-archiver - archive report').addNote(reportNotes.join('\n')).complete();
+    }
 }
